@@ -1,0 +1,5 @@
+package letter;
+
+public abstract class Inter extends Letter {
+
+}

@@ -1,0 +1,22 @@
+package letter;
+
+import courriers.*;
+
+public class SimpleLetter extends Letter{
+
+	private String text ;
+	public SimpleLetter(Inhabitant sender, Inhabitant receiver, int cost, String text) {
+		super(sender, receiver, cost);
+		this.text = text;
+	}
+	
+	public String getText(){
+		return this.text;
+	}
+	
+	public void setText(String text){
+		this.text = text;
+	}
+	
+	
+}

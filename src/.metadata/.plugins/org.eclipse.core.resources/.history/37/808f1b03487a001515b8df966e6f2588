@@ -1,0 +1,14 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Inter extends Letter {
+		
+	public Inter(Inhabitant sender, Inhabitant receiver, int cost) {	
+		super(sender, receiver, cost);
+	}
+	
+	public void action(){
+		this.sender.bankAccount.debit(cost);
+
+}

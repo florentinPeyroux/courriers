@@ -1,0 +1,30 @@
+package letter;
+
+import courriers.*;
+
+public class PromissoryLetter extends Inter{
+	
+	private int amount;
+	private int beforeDebit;
+
+	public PromissoryLetter(Inhabitant sender, Inhabitant receiver,int amount) {
+		super(sender, receiver);
+		this.amount = amount;
+		PromissoryLetter.cost = (cost+(1/100)*amount+amount);
+	}
+	
+	public int getAmount(){
+		return this.amount;
+	}
+	
+	public void setAmount(int amount){
+		this.amount = amount;
+	}
+	
+	@Override
+	public void action(){
+		debitBankAccount();
+		this.receiver.getBankAccount().setAmount(amount);
+	}
+
+}

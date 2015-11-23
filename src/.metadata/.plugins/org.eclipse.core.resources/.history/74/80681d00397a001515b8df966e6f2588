@@ -1,0 +1,16 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class SimpleLetter extends Letter{
+
+	public SimpleLetter(Inhabitant sender, Inhabitant receiver, int cost) {
+		super(sender, receiver, cost);
+	}
+	
+	public void action (){
+		
+	}
+
+	
+}

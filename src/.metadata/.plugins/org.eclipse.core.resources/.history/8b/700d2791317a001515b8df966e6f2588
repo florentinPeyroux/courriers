@@ -1,0 +1,20 @@
+package courriers;
+
+public class BankAccount {
+	
+	private int mount ;
+	
+	public void bankAccount(int mount){
+		 this.mount = mount;
+	 }
+	 
+	public void credit (int mount){
+		this.mount=this.mount + mount;
+	}
+	
+	public void dedit (int mount){
+		this.mount=this.mount - mount;
+	}
+	
+
+}

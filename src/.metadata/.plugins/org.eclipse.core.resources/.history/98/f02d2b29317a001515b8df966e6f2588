@@ -1,0 +1,13 @@
+package courriers;
+
+public class BankAccount {
+	
+	private int mount ;
+	
+	public void BankAccount(int mount){
+		 this.mount = mount;
+	 }
+	 
+	public  
+
+}

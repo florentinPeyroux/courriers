@@ -1,0 +1,20 @@
+package letter;
+
+import courriers.*;
+
+public class SimpleLetter extends Letter{
+
+	public SimpleLetter(Inhabitant sender, Inhabitant receiver, String text) {
+		super(sender, receiver, text);
+	}
+
+	@Override
+	public void action() {
+				
+		
+	}
+
+
+	
+	
+}

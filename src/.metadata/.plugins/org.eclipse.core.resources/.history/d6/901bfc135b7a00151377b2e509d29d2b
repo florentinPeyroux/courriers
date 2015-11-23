@@ -1,0 +1,20 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class RegisteredLetter extends Inter {
+
+	public RegisteredLetter(Inhabitant sender, Inhabitant receiver,String text) {
+		super(sender, receiver, text);
+		Letter.cost = cost*15;
+	}
+
+	@Override
+	public void action() {
+		debitBankAccount();
+		
+	}
+
+
+	
+}

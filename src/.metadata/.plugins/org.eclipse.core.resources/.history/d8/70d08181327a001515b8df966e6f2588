@@ -1,0 +1,10 @@
+package courriers;
+
+public class City {
+	
+	private String name;
+	private Inhabitant inhabitant;
+	/* post box */
+	
+
+}

@@ -1,0 +1,30 @@
+package courriers;
+
+import java.util.*;
+import letter.*
+
+public class City {
+	
+	private String name;
+	private ArrayList <Inhabitant> inhabitantListe;
+	private ArrayList <Letter> postBox;
+	
+	/* post box */
+	
+	public City(String name){
+		this.name = name;
+	}
+	
+	public String getName (){
+		return this.name;
+	}
+	
+	public void addInhabitant(Inhabitant inhabitant){
+		inhabitantListe.add(inhabitant);
+	}
+	
+	public void sendLetter(Letter letter){
+		
+	}
+
+}

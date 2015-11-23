@@ -1,0 +1,9 @@
+package letter;
+
+import courrier.*;
+
+public abstract class Letter {
+	private Inhabitant sender;
+	private Inhabitant receiver;
+
+}

@@ -1,0 +1,14 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class UrgentLetter extends Inter {
+
+	public UrgentLetter(Inhabitant sender, Inhabitant receiver) {
+		super(sender, receiver);
+		this.cost = 2*cost;
+	}
+
+
+
+}

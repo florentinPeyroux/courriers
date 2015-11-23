@@ -1,0 +1,12 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public abstract class Inter extends Letter {
+
+	public Inter(Inhabitant sender, Inhabitant receiver) {
+		super(sender, receiver);
+		
+	}
+
+}

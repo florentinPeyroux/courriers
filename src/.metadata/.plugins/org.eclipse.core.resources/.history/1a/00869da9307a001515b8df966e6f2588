@@ -1,0 +1,8 @@
+package courriers;
+
+public class Inhabitant {
+	private String name;
+	private City city;
+	private BankAccount bankAccount ;
+
+}

@@ -1,0 +1,21 @@
+package courriers;
+
+import java.util.*;
+
+public class City {
+	
+	private String name;
+	private ArrayList <Inhabitant> inhabitant;
+	
+	/* post box */
+	
+	public void Courriers(String name){
+		this.name = name;
+	}
+	
+	public String getName (){
+		return this.name;
+	}
+
+
+}

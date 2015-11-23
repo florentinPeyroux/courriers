@@ -1,0 +1,14 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class RegisteredLetter extends Inter {
+
+	public RegisteredLetter(Inhabitant sender, Inhabitant receiver) {
+		super(sender, receiver);
+		this.cost = cost*15;
+	}
+
+
+	
+}

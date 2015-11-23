@@ -1,0 +1,6 @@
+package courriers;
+
+public class BankAccount {
+	private int mount ;
+
+}

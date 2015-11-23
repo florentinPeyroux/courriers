@@ -1,0 +1,19 @@
+package courriers;
+
+public class City {
+	
+	private String name;
+	private Inhabitant inhabitant;
+	/* post box */
+	
+	public void Courriers(String name , Inhabitant inhabitant){
+		this.name = name;
+		this.inhabitant = inhabitant ;
+	}
+	
+	public String getName (){
+		return this.name;
+	}
+
+
+}

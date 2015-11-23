@@ -1,0 +1,13 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Inter extends Letter {
+
+	public Inter(Inhabitant sender, Inhabitant receiver, int cost,int secondCost) {
+		protected int secondCost ;
+		super(sender, receiver, cost);
+		this.secondCost = secondCost;
+	}
+
+}

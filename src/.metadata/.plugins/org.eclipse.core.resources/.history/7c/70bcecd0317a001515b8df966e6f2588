@@ -1,0 +1,19 @@
+package courriers;
+
+public class Inhabitant {
+	
+	private String name;
+	private City city;
+	private BankAccount bankAccount ;
+	
+	public void inhabitant (String name, City city, BankAccount bankacount){
+		this.name = name;
+		this.city = city;
+		this.bankAccount = bankAccount ;
+	}
+	
+	
+	
+	
+
+}

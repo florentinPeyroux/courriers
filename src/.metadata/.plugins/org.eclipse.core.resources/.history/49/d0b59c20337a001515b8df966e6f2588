@@ -1,0 +1,26 @@
+package courriers;
+
+public class Inhabitant {
+	
+	private String name;
+	private City city;
+	private BankAccount bankAccount ;
+	
+	public void inhabitant (String name, City city, int bankacount){
+		this.name = name;
+		this.city = city;
+		this.bankAccount.getBankAccount() = bankAccount ;
+	}
+	
+	public String getNAme(){
+		return this.name;
+	}
+	
+	public String getNameCity (){
+		return this.city.getName();
+	}
+	
+	
+	
+
+}

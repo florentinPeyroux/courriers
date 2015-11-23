@@ -1,0 +1,25 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Letter {
+	protected Inhabitant sender;
+	protected Inhabitant receiver;
+	protected static int cost=1;
+	
+	public Letter(Inhabitant sender, Inhabitant receiver){
+		this.sender = sender;
+		this.receiver = receiver;
+	}
+	
+	public int getCost(){
+		return Letter.cost;
+	}
+	
+	public void setCost(int cost){
+		Letter.cost = cost;
+	}
+	
+	public abstract void action();
+
+}

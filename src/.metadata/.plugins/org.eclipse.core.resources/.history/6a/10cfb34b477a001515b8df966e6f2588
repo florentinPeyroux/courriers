@@ -1,0 +1,18 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class UrgentLetter extends Inter {
+
+	public UrgentLetter(Inhabitant sender, Inhabitant receiver, int cost) {
+		super(sender, receiver, cost);
+		this.cost = 2*cost;
+	}
+
+	@Override
+	public void action() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Letter {
+	private Inhabitant sender;
+	private Inhabitant receiver;
+	private int cost;
+	
+	public Letter(Inhabitant sender, Inhabitant receiver, int cost ){
+		this.sender = sender;
+		this.receiver = receiver;
+		this.cost = cost;
+	}
+	public abstract void action();
+}
