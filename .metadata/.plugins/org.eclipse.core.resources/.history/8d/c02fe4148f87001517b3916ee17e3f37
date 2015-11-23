@@ -1,0 +1,62 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Letter {
+	protected Inhabitant sender;
+
+	protected Inhabitant receiver;
+	protected String text;
+	protected int cost;
+	protected boolean isUrgentLetter;
+
+	public Letter(Inhabitant sender, Inhabitant receiver, String text) {
+		this.sender = sender;
+		this.receiver = receiver;
+		this.text = text;
+		this.cost = 1;
+		isUrgentLetter=false;
+	}
+
+	public int getCost() {
+		return this.cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public Inhabitant getSender() {
+		return sender;
+	}
+
+	public void setSender(Inhabitant sender) {
+		this.sender = sender;
+	}
+
+	public Inhabitant getReceiver() {
+		return receiver;
+	}
+
+	public void setReceiver(Inhabitant receiver) {
+		this.receiver = receiver;
+	}
+
+	public void debitBankAccount() {
+		int beforeDebit;
+		beforeDebit = this.sender.getBankAccount().getAmount();
+		this.sender.getBankAccount().setAmount(beforeDebit - this.getCost());
+	//	System.out.println(this.getText());
+		System.out.println(this.getCost()+" euros is debited from "+ this.sender.getName() + "account whose balance is now "+this.sender.getBankAccount()+" euros");
+	}
+	public abstract String getMessage();
+	public abstract void action();
+}

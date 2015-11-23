@@ -1,0 +1,24 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class ThanksLetter extends Inter {
+
+	public ThanksLetter(Inhabitant sender,Inhabitant receiver,Letter letter) {
+		
+		super(sender, receiver,"", new SimpleLetter(sender, receiver, "thanks for the "+letter.getMessage()));
+	}
+	//promissory note letter whose content is a monney content);
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void action() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

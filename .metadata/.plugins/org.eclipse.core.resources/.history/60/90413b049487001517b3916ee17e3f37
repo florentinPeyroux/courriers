@@ -1,0 +1,40 @@
+package courriers;
+
+import letter.*;
+
+public class Main {
+
+	/**
+	 * @param args
+	 * @throws IllegalUrgentLetterException 
+	 */
+	public static void main(String[] args) throws IllegalUrgentLetterException {
+		City acity = new City("Lille");
+		Inhabitant inhabitant17 = new Inhabitant("inhabitant17", acity, 5000);
+		Inhabitant inhabitant35 = new Inhabitant("inhabitant35", acity, 5000);
+		Inhabitant inhabitant46 = new Inhabitant("inhabitant46", acity, 5000);
+		Inhabitant inhabitant1 = new Inhabitant("inhabitant1", acity, 5000);
+		Inhabitant inhabitant10 = new Inhabitant("inhabitant10", acity, 5000);
+		Inhabitant inhabitant9 = new Inhabitant("inhabitant9", acity, 5000);
+
+		SimpleLetter simpleLetter1 = new SimpleLetter(inhabitant17,
+				inhabitant1, "blablabla");
+		UrgentLetter urgentLetter1 = new UrgentLetter(simpleLetter1);
+		try{
+		UrgentLetter urgentLetter3 = new UrgentLetter(urgentLetter1);
+		}catch(IllegalUrgentException e){
+			
+		}
+		SimpleLetter simpleLetter2 = new SimpleLetter(inhabitant35,
+				inhabitant10, "blablabla");
+		PromissoryLetter promissoryLetter = new PromissoryLetter(inhabitant46,
+				inhabitant9, 18);
+
+		acity.sendLetter(urgentLetter1);
+		acity.sendLetter(simpleLetter2);
+		acity.sendLetter(promissoryLetter);
+
+		acity.distributeLetter();
+	}
+
+}

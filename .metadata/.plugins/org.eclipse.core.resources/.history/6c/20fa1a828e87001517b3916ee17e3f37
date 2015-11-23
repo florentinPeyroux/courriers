@@ -1,0 +1,22 @@
+package letter;
+
+
+public class UrgentLetter extends Inter {
+	
+	
+	public UrgentLetter(Letter letter) {
+		super(letter.getSender(), letter.getReceiver(), letter.getText(),letter);
+		this.cost = 2 * letter.getCost();
+		isUrgentLetter=true;
+	}
+
+	@Override
+	public void action() {
+		debitBankAccount();
+	
+	}
+
+	public String getMessage(){
+		return "an urgent letter whose content is"+letter.getMessage();
+	}
+}

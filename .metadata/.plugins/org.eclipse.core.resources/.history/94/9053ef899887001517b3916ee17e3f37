@@ -1,0 +1,24 @@
+package letter;
+
+import courriers.Inhabitant;
+
+public class ThanksLetter extends Inter {
+
+	public ThanksLetter(Inhabitant sender, Inhabitant receiver, String text,
+			Letter letter) {
+		super(sender, receiver, text, letter);
+	}
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void action() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

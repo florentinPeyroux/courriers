@@ -1,0 +1,6 @@
+package letter;
+
+public class illegalUrgentLetterException extends Exception {
+
+	public illegalUrgentLetterException()
+}

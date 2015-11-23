@@ -1,0 +1,40 @@
+package letter;
+
+import courriers.*;
+
+public class PromissoryLetter extends Letter{
+	
+	protected int amount;
+	
+	public PromissoryLetter(Inhabitant sender, Inhabitant receiver,int amount) {
+		super(sender, receiver, String.valueOf(amount));
+		this.amount = amount;
+		this.text = String.valueOf(amount);
+		this.cost = (1+(1/100)*amount);
+
+	}
+	
+	public int getAmount(){
+		return this.amount;
+	}
+	
+	public void setAmount(int amount){
+		this.amount = amount;
+	}
+	
+	
+	@Override
+	public void action(){
+		
+		int amountReceiver = this.receiver.getBankAccount().getAmount();
+		this.receiver.getBankAccount().setAmount(this.amount+amountReceiver);
+	//a faire	this.sender.getBankAccount().setAmount(this.amount+amountReceiver);
+		System.out.println("+ "+this.receiver.getName()+" account is credited with "+this.amount+" euros; its balance is now "+this.receiver.getBankAccount().getAmount()+" euros");
+	
+	}
+
+	public String getMessage(){
+		return "a promissory letter whose content is a money content ("+getText()+")";
+	}
+
+}

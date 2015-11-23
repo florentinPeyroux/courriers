@@ -1,0 +1,15 @@
+package letter;
+
+import courriers.*;
+
+public abstract class Inter extends Letter {
+	
+	protected Letter letter;
+	
+	public Inter(Inhabitant sender, Inhabitant receiver, String text,Letter letter) {	
+		super(sender, receiver, text);
+		this.letter=letter;
+		this.isUrgentLetter=letter.isUrgentLetter;
+	}
+	
+}
